@@ -61,3 +61,6 @@ let greeter = new Greeter("World")
 console.log(greeter.greet());
 let specificGreeting = new SpecificGreeter("Specific World")
 console.log(specificGreeting.greet());
+
+/* ---------------  Access modifiers --------------- */
+// greeter.greeting // cannot access it's private

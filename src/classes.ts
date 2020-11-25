@@ -1,9 +1,9 @@
 export class Greeter {
-    greeting: string
+    private greeting: string
     constructor(greeting: string) {
         this.greeting = greeting
     }
-    greet(): string { return "Hello " + this.greeting }
+    protected greet(): string { return "Hello " + this.greeting }
 }
 
 export class SpecificGreeter extends Greeter {
