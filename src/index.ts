@@ -1,3 +1,5 @@
+import {sum, sum2 } from './functions';
+
 /* ---------------  Variable types --------------- */
 console.log('Hello World!')
 
@@ -24,3 +26,7 @@ console.log(secondArray);
 let variable: number | string = "string"
 variable = 3
 console.log(variable);
+
+/* ---------------  functions, null, undefined --------------- */
+console.log(sum(2, 3));
+console.log(sum2("2", 10));
