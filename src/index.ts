@@ -1,3 +1,4 @@
+/* ---------------  Variable types --------------- */
 console.log('Hello World!')
 
 const myString = "Hello brave new world"
@@ -14,3 +15,12 @@ let myAnyVariable:unknown = "String" // or type = any
 console.log(myAnyVariable);
 myAnyVariable = 3
 console.log(myAnyVariable);
+
+/* ---------------  Arrays, Tuples --------------- */
+const firstArray: string[] = ["first", "second", "third"]
+console.log(firstArray);
+const secondArray: [string, number, boolean] = ["String", 20, true] // fixed number of elements and specified their type, cannot add 4 elements
+console.log(secondArray);
+let variable: number | string = "string"
+variable = 3
+console.log(variable);
