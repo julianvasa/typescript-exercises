@@ -1,5 +1,7 @@
 import { sum, sum2 } from './functions';
 import { Colors } from './enums';
+import { Person } from './interfaces';
+import { Greeter, SpecificGreeter } from './classes';
 
 /* ---------------  Variable types --------------- */
 console.log('Hello World!')
@@ -43,12 +45,6 @@ switch (myEnum) {
 }
 
 /* ---------------  Interfaces --------------- */
-interface Person {
-    name: string,
-    surname: string,
-    age: number
-}
-
 const concatPersonData = (person: Person) =>{
     return person.name + " " + person.surname + " age: "+person.age;
 }
@@ -59,3 +55,9 @@ const person1: Person = {
     age: 30
 }
 console.log(concatPersonData(person1));
+
+/* ---------------  Classes --------------- */
+let greeter = new Greeter("World")
+console.log(greeter.greet());
+let specificGreeting = new SpecificGreeter("Specific World")
+console.log(specificGreeting.greet());
