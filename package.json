@@ -1,0 +1,21 @@
+{
+  "name": "pure-typescript-exercises",
+  "version": "1.0.0",
+  "description": "Simple exercises to practice Typescript",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "Julian Vasa",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "eslint": "^7.14.0",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  }
+}
