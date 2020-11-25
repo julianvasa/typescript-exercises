@@ -1,4 +1,5 @@
-import {sum, sum2 } from './functions';
+import { sum, sum2 } from './functions';
+import { Colors } from './enums';
 
 /* ---------------  Variable types --------------- */
 console.log('Hello World!')
@@ -13,7 +14,7 @@ console.log(myNumber)
 myNumber = 0xf03 // number can be int, float, hex 
 console.log(myNumber)
 
-let myAnyVariable:unknown = "String" // or type = any
+let myAnyVariable: unknown = "String" // or type = any
 console.log(myAnyVariable);
 myAnyVariable = 3
 console.log(myAnyVariable);
@@ -26,7 +27,35 @@ console.log(secondArray);
 let variable: number | string = "string"
 variable = 3
 console.log(variable);
+firstArray.forEach(element => {
+    console.log(element);
+});
 
 /* ---------------  functions, null, undefined --------------- */
 console.log(sum(2, 3));
 console.log(sum2("2", 10));
+
+/* ---------------  Enums --------------- */
+let myEnum = Colors.RED
+switch (myEnum) {
+    case Colors.RED: { console.log("RED"); break; }
+    default: console.log("Unknown color");
+}
+
+/* ---------------  Interfaces --------------- */
+interface Person {
+    name: string,
+    surname: string,
+    age: number
+}
+
+const concatPersonData = (person: Person) =>{
+    return person.name + " " + person.surname + " age: "+person.age;
+}
+
+const person1: Person = {
+    name: "John",
+    surname: "Doe",
+    age: 30
+}
+console.log(concatPersonData(person1));
