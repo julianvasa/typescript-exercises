@@ -3,7 +3,7 @@ export class Greeter {
     constructor(greeting: string) {
         this.greeting = greeting
     }
-    protected greet(): string { return "Hello " + this.greeting }
+    public greet(): string { return "Hello " + this.greeting }
 }
 
 export class SpecificGreeter extends Greeter {
