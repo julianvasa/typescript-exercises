@@ -1,4 +1,4 @@
-export  const sum = (num: number, num2: number): number => {
+export  const sum = ({ num, num2 }: { num: number; num2: number }): number => {
     return num + num2
 }
 

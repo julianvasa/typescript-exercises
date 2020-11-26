@@ -34,7 +34,7 @@ firstArray.forEach(element => {
 });
 
 /* ---------------  functions, null, undefined --------------- */
-console.log(sum(2, 3));
+console.log(sum({ num: 2, num2: 3 }));
 console.log(sum2("2", 10));
 const x = funcWithTuples("Hello function with tuples as params", 21, false);
 console.log(x);
