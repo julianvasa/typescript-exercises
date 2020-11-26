@@ -43,7 +43,7 @@ console.log(y);
 
 
 /* ---------------  Enums --------------- */
-let myEnum = Colors.RED
+const myEnum = Colors.RED
 switch (myEnum) {
     case Colors.RED: { console.log("RED"); break; }
     default: console.log("Unknown color");
@@ -68,9 +68,9 @@ console.log(partialPerson);
 
 
 /* ---------------  Classes --------------- */
-let greeter = new Greeter("World")
+const greeter = new Greeter("World")
 console.log(greeter.greet());
-let specificGreeting = new SpecificGreeter("Specific World")
+const specificGreeting = new SpecificGreeter("Specific World")
 console.log(specificGreeting.greet());
 
 /* ---------------  Access modifiers --------------- */
