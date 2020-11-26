@@ -1,6 +1,6 @@
 import { sum, sum2, funcWithTuples, funcWithOptionalParams } from './functions';
 import { Colors } from './enums';
-import { Person } from './interfaces';
+import { Person, PartialPerson } from './interfaces';
 import { Greeter, SpecificGreeter } from './classes';
 
 /* ---------------  Variable types --------------- */
@@ -60,6 +60,12 @@ const person1: Person = {
     age: 30
 }
 console.log(concatPersonData(person1));
+
+const partialPerson: PartialPerson = {
+    name: "Just the name"
+}
+console.log(partialPerson);
+
 
 /* ---------------  Classes --------------- */
 let greeter = new Greeter("World")
