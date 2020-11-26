@@ -9,3 +9,5 @@ type Optionalize<T> = {
 }
 
 export type PartialPerson = Optionalize<Person>
+
+export type NumberOrStringAsNumber = number | string

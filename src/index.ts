@@ -1,6 +1,6 @@
 import { sum, sum2, funcWithTuples, funcWithOptionalParams } from './functions';
 import { Colors } from './enums';
-import { Person, PartialPerson } from './interfaces';
+import { Person, PartialPerson, NumberOrStringAsNumber } from './interfaces';
 import { Greeter, SpecificGreeter } from './classes';
 
 /* ---------------  Variable types --------------- */
@@ -66,6 +66,8 @@ const partialPerson: PartialPerson = {
 }
 console.log(partialPerson);
 
+const z: NumberOrStringAsNumber = "one"
+console.log(z);
 
 /* ---------------  Classes --------------- */
 const greeter = new Greeter("World")
