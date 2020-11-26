@@ -1,6 +1,6 @@
 import { sum, sum2, funcWithTuples, funcWithOptionalParams } from './functions';
 import { Colors } from './enums';
-import { Person, PartialPerson, NumberOrStringAsNumber } from './interfaces';
+import { Person, PartialPerson, NumberOrStringAsNumber, Fruit, Color } from './interfaces';
 import { Greeter, SpecificGreeter } from './classes';
 
 /* ---------------  Variable types --------------- */
@@ -68,6 +68,14 @@ console.log(partialPerson);
 
 const z: NumberOrStringAsNumber = "one"
 console.log(z);
+const yellow: Color = {
+    color: Colors.YELLOW
+}
+const fruit: Fruit = {
+    name: "Apple",
+    color: yellow
+}
+console.log(fruit);
 
 /* ---------------  Classes --------------- */
 const greeter = new Greeter("World")
@@ -75,5 +83,14 @@ console.log(greeter.greet());
 const specificGreeting = new SpecificGreeter("Specific World")
 console.log(specificGreeting.greet());
 
-/* ---------------  Access modifiers --------------- */
-// greeter.greeting // cannot access it's private
+/* ---------------  Immutable variables --------------- */
+
+const obj = {
+    name: "Name can change"
+}
+obj.name = "Changed name"
+const immutableObject = {
+    name: "Name cannot change"
+} as const 
+console.log(immutableObject);
+//immutableObject.name = "Cannot change name"
