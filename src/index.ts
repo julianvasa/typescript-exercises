@@ -1,4 +1,4 @@
-import { sum, sum2 } from './functions';
+import { sum, sum2, funcWithTuples, funcWithOptionalParams } from './functions';
 import { Colors } from './enums';
 import { Person } from './interfaces';
 import { Greeter, SpecificGreeter } from './classes';
@@ -36,6 +36,11 @@ firstArray.forEach(element => {
 /* ---------------  functions, null, undefined --------------- */
 console.log(sum(2, 3));
 console.log(sum2("2", 10));
+const x = funcWithTuples("Hello function with tuples as params", 21, false);
+console.log(x);
+const y = funcWithOptionalParams("another string", undefined, 22, 1)
+console.log(y);
+
 
 /* ---------------  Enums --------------- */
 let myEnum = Colors.RED
@@ -45,8 +50,8 @@ switch (myEnum) {
 }
 
 /* ---------------  Interfaces --------------- */
-const concatPersonData = (person: Person) =>{
-    return person.name + " " + person.surname + " age: "+person.age;
+const concatPersonData = (person: Person) => {
+    return person.name + " " + person.surname + " age: " + person.age;
 }
 
 const person1: Person = {
